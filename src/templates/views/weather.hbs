@@ -26,7 +26,7 @@
                <div class="tempInfo">
                    <div class="top_layer">
                        <p id="day">Thursday</p>
-                       <p id="today_date">15 Jul</p>
+                       {{!-- <p id="date">15 Jul</p> --}}
                    </div>
                    <div class="main_layer">
                        <p id="city_name">Get Output Here</p>
@@ -62,11 +62,25 @@
 
             let currentTime = new Date();
             days = weekday[currentTime.getDay()];
-            let day = document.getElementById(`day`);
+            let day = document.getElementById('day');
 
             day.innerText = days;
           };
-          getCurrentDay()
+          getCurrentDay();
+
+
+          {{!-- const getCurrentTime = ()=>{
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var now = new Date();
+            var month = months[now.getMonth()];
+            var dates = now.getDate();
+            let date = document.getElementById('date');
+            }
+         
+            date.innerText = dates;
+        };
+
+       getCurrentTime(); --}}
      </script>
 
 </body>

@@ -206,7 +206,7 @@ html{
 
 .main_layer .middle_layer p,
 .main_layer .middle_layer .fa{
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 900;
 }
 
@@ -255,7 +255,7 @@ footer p{
     font-size: 1.4rem;
     line-height: 5rem;
     padding-left: 5px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 0px;
     position: relative;
     
@@ -274,10 +274,14 @@ footer p{
     }
 }
 
-/* .temp_form{
-    width: auto;
-}
+@media (max-width: 800px){
 
-.tempInfo{
-    width: auto;
-} */
+    .temp_form{
+        width: auto;
+    }
+    
+    .tempInfo{
+        width: auto;
+    }
+
+}
